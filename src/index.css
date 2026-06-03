@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "AristotelicaSmallCaps-Regular";
+    src: url(/public/fonts/AristotelicaSmallCaps-Regular.ttf);
+}
+
+@font-face {
+    font-family: "WeissenhofGrotesk-Regular";
+    src: url(/public/fonts/WeissenhofGrotesk-Medium.otf );
+}
+
+@font-face {
+    font-family: "Galgo";
+    src: url(/public/fonts/Galgo.ttf);
+}
