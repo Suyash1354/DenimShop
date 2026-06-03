@@ -14,3 +14,23 @@
     font-family: "Galgo";
     src: url(/public/fonts/Galgo.ttf);
 }
+
+@font-face {
+    font-family: "Geist-Bold";
+    src: url(/public/fonts/Geist-Bold.otf);
+}
+
+@font-face {
+    font-family: "Geist-MediumItalic";
+    src: url(/public/fonts/Geist-MediumItalic.otf);
+}
+
+@font-face {
+    font-family: "Geist-Medium";
+    src: url(/public/fonts/Geist-Medium.otf);
+}
+
+@font-face {
+    font-family: "Geist-Thin";
+    src: url(/public/fonts/Geist-Thin.otf);
+}
