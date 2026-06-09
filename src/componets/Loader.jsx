@@ -18,16 +18,16 @@ const Loader = ({ onComplete }) => {
   ];
 
   const imagesToPreload = [
-    "/images/1.png",
-    "/images/2.png",
-    "/images/3.png",
-    "/images/4.png",
-    "/images/5.png",
-    "/images/6.png",
-    "/images/7.png",
-    "/images/8.png",
-    "/images/9.png",
-    "/images/10.png",
+    "/images/1.webp",
+    "/images/2.webp",
+    "/images/3.webp",
+    "/images/4.webp",
+    "/images/5.webp",
+    "/images/6.webp",
+    "/images/7.webp",
+    "/images/8.webp",
+    "/images/9.webp",
+    "/images/10.webp",
     "/images/Firefly.png",
     "/images/BG-PNG-CROP.png",
     "/images/storefront.png"

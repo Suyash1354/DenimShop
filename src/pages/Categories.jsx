@@ -58,13 +58,13 @@ const Categories = () => {
   ];
 
   const Images = [
-    { name: "4", imageUrl: "/images/4.png" },
-    { name: "5", imageUrl: "/images/5.png" },
-    { name: "6", imageUrl: "/images/6.png" },
-    { name: "7", imageUrl: "/images/7.png" },
-    { name: "8", imageUrl: "/images/8.png" },
-    { name: "9", imageUrl: "/images/9.png" },
-    { name: "10", imageUrl: "/images/10.png" },
+    { name: "4", imageUrl: "/images/4.webp" },
+    { name: "5", imageUrl: "/images/5.webp" },
+    { name: "6", imageUrl: "/images/6.webp" },
+    { name: "7", imageUrl: "/images/7.webp" },
+    { name: "8", imageUrl: "/images/8.webp" },
+    { name: "9", imageUrl: "/images/9.webp" },
+    { name: "10", imageUrl: "/images/10.webp" },
   ];
 
   const ContainerRef = useRef(null);
@@ -276,9 +276,9 @@ const Categories = () => {
 
         {/* 3 absolute images */}
         <div ref={ImageRef} className="THREE-IMAGES flex h-screen absolute w-full top-0 left-0 pointer-events-none">
-          <img className="w-1/3 object-cover" src="/images/1.png" alt="" />
-          <img className="w-1/3 object-cover" src="/images/2.png" alt="" />
-          <img className="w-1/3 object-cover" src="/images/3.png" alt="" />
+          <img className="w-1/3 object-cover" src="/images/1.webp" alt="" />
+          <img className="w-1/3 object-cover" src="/images/2.webp" alt="" />
+          <img className="w-1/3 object-cover" src="/images/3.webp" alt="" />
         </div>
 
         {/* Extra images stacked on right side */}
