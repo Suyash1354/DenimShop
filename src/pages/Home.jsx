@@ -98,7 +98,7 @@ const Home = ({ isLoading }) => {
 
             <div
               ref={SubTextRef}
-              className="SUB-TEXT w-full h-screen absolute lg:top-50 md:top-60 top-45 flex justify-center"
+              className="SUB-TEXT w-full h-screen absolute lg:top-50 md:top-60 top-30 flex justify-center"
             >
               <h1 className="text-[3vw] lg:w-40 lg:h-8 flex justify-center md:text-[3vw] lg:text-[1vw] font-[WeissenhofGrotesk-Regular] text-[#242424] ">
                 TIMELESS DENIM
