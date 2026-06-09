@@ -232,9 +232,9 @@ const Categories = () => {
   return (
     <section ref={ContainerRef} className="w-full relative overflow-x-hidden">
       
-      {/* ======================================================================== */}
+     
       {/* DESKTOP LAYOUT (>= 1024px)                                               */}
-      {/* ======================================================================== */}
+
       <div id="desktop-container" className="hidden lg:flex CONTAINER w-full h-screen items-center relative overflow-hidden">
         
         <div className="CONTENT relative w-2/3 flex-none h-screen flex flex-col justify-center p-12 text-[#242424]">
@@ -274,7 +274,7 @@ const Categories = () => {
 
         <div className="IMAGESDummy w-1/3 flex-none h-screen"></div>
 
-        {/* Initial 3 absolute images */}
+        {/* 3 absolute images */}
         <div ref={ImageRef} className="THREE-IMAGES flex h-screen absolute w-full top-0 left-0 pointer-events-none">
           <img className="w-1/3 object-cover" src="/images/1.png" alt="" />
           <img className="w-1/3 object-cover" src="/images/2.png" alt="" />
@@ -294,9 +294,9 @@ const Categories = () => {
         </div>
       </div>
 
-      {/* ======================================================================== */}
+      
       {/* MOBILE & TABLET LAYOUT (< 1024px)                                        */}
-      {/* ======================================================================== */}
+      
       <div className="block lg:hidden w-full px-6 pt-16 pb-32 bg-[#D9D2CE] text-[#242424]">
         <div className="w-full md:max-w-2xl mx-auto">
           

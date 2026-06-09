@@ -5,24 +5,30 @@ import { SplitText } from "gsap/SplitText";
 
 gsap.registerPlugin(SplitText);
 
-const Home = () => {
+const Home = ({ isLoading }) => {
   const BgRef = useRef(null);
   const PngRef = useRef(null);
   const NavRef = useRef(null);
   const HeadingRef = useRef(null);
   const SubTextRef = useRef(null);
+  
+  
+  const introTimeline = useRef(null);
 
+  
   useGSAP(() => {
     const Heading = new SplitText(HeadingRef.current, { type: "chars" });
-    const tl = gsap.timeline();
+    
+    // Create the timeline in a paused state right away
+    introTimeline.current = gsap.timeline({ paused: true });
 
-    tl.from(PngRef.current, {
+    introTimeline.current.from(PngRef.current, {
       y: 800,
       duration: 1.2,
       ease: "power3.out",
     });
 
-    tl.fromTo(
+    introTimeline.current.fromTo(
       Heading.chars,
       { opacity: 0, filter: "blur(30px)" },
       {
@@ -35,23 +41,29 @@ const Home = () => {
       ">",
     );
 
-    tl.fromTo(
+    introTimeline.current.fromTo(
       NavRef.current,
       { opacity: 0, filter: "blur(30px)" },
       { opacity: 1, filter: "blur(0px)", duration: 1.5, ease: "sine.out" },
       "-=1",
     );
 
-    tl.fromTo(
+    introTimeline.current.fromTo(
       SubTextRef.current,
       { opacity: 0, filter: "blur(30px)" },
       { opacity: 1, filter: "blur(0px)", duration: 1.5, ease: "sine.out" },
       "<",
     );
-  });
+  }, []); 
+
+  useGSAP(() => {
+    if (!isLoading && introTimeline.current) {
+      introTimeline.current.play();
+    }
+  }, [isLoading]); 
 
   return (
-    <section className="w-full h-screen relative overflow-hiddens">
+    <section className="w-full h-screen relative overflow-hidden">
       <div className="CONTAINER w-full h-screen">
         <div ref={BgRef} className="BG-IMAGE w-full h-screen z-0 ">
           <img
@@ -71,7 +83,7 @@ const Home = () => {
         <div className="TEXT w-full h-screen absolute inset-0 z-10">
           <div
             ref={NavRef}
-            className="NAV-TEXT w-full h-screen  text-[3vw] md:text-[2vw] lg:text-[0.9vw] flex justify-between py-4 px-6 z-50 font-[WeissenhofGrotesk-Regular] text-[#242424] "
+            className="NAV-TEXT w-full text-[3vw] md:text-[2vw] lg:text-[0.9vw] flex justify-between py-4 px-6 z-50 font-[WeissenhofGrotesk-Regular] text-[#242424] "
           >
             <h1>FLAGSHIP STORE FRANCE</h1>
             <h1>Maison Noiré 1998</h1>
@@ -86,7 +98,7 @@ const Home = () => {
 
             <div
               ref={SubTextRef}
-              className="SUB-TEXT w-full h-screen absolute lg:top-5 0 md:top-60 top-45 flex justify-center"
+              className="SUB-TEXT w-full h-screen absolute lg:top-50 md:top-60 top-45 flex justify-center"
             >
               <h1 className="text-[3vw] lg:w-40 lg:h-8 flex justify-center md:text-[3vw] lg:text-[1vw] font-[WeissenhofGrotesk-Regular] text-[#242424] ">
                 TIMELESS DENIM
