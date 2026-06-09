@@ -297,18 +297,18 @@ const Categories = () => {
       
       {/* MOBILE & TABLET LAYOUT (< 1024px)                                        */}
       
-      <div className="block lg:hidden w-full px-6 pt-16 pb-32 bg-[#D9D2CE] text-[#242424]">
-        <div className="w-full md:max-w-2xl mx-auto">
+      <div className="block lg:hidden w-full  pt-16 pb-32 bg-[#D9D2CE] text-[#242424]">
+        <div className="w-full  mx-auto">
           
           {/* First 3 images one after another */}
-          <div className="flex flex-col gap-8 mb-20">
+          <div className="flex flex-col mb-20">
             <img className="mobile-reveal w-full aspect-[3/4] object-cover rounded shadow-md" src="/images/1.webp" alt="" />
             <img className="mobile-reveal w-full aspect-[3/4] object-cover rounded shadow-md" src="/images/2.webp" alt="" />
             <img className="mobile-reveal w-full aspect-[3/4] object-cover rounded shadow-md" src="/images/3.webp" alt="" />
           </div>
 
           {/* List: Heading then Image */}
-          <div className="flex flex-col gap-20">
+          <div className="flex flex-col gap-20 p-6">
             {Images.map((item, index) => {
               const denimItem = DenimList[index + 1] || DenimList[0]; 
               return (
@@ -327,7 +327,7 @@ const Categories = () => {
           </div>
 
           {/* Footer content */}
-          <div className="mobile-reveal flex justify-between font-[Geist-Thin] text-[11px] md:text-xs uppercase tracking-widest mt-32 pt-8 border-t border-[#242424]/30 text-[#242424]">
+          <div className="mobile-reveal flex justify-between font-[Geist-Thin]  p-4 text-[11px] md:text-xs uppercase tracking-widest mt-32 pt-8 border-t border-[#242424]/30 text-[#242424]">
             <h1>Maison Noiré × Heritage Denim</h1>
             <h1>2026</h1>
           </div>
