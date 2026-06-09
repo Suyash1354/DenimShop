@@ -302,9 +302,9 @@ const Categories = () => {
           
           {/* First 3 images one after another */}
           <div className="flex flex-col gap-8 mb-20">
-            <img className="mobile-reveal w-full aspect-[3/4] object-cover rounded shadow-md" src="/images/1.png" alt="" />
-            <img className="mobile-reveal w-full aspect-[3/4] object-cover rounded shadow-md" src="/images/2.png" alt="" />
-            <img className="mobile-reveal w-full aspect-[3/4] object-cover rounded shadow-md" src="/images/3.png" alt="" />
+            <img className="mobile-reveal w-full aspect-[3/4] object-cover rounded shadow-md" src="/images/1.webp" alt="" />
+            <img className="mobile-reveal w-full aspect-[3/4] object-cover rounded shadow-md" src="/images/2.webp" alt="" />
+            <img className="mobile-reveal w-full aspect-[3/4] object-cover rounded shadow-md" src="/images/3.webp" alt="" />
           </div>
 
           {/* List: Heading then Image */}
