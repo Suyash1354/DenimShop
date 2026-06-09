@@ -68,7 +68,7 @@ const Home = ({ isLoading }) => {
         <div ref={BgRef} className="BG-IMAGE w-full h-screen z-0 ">
           <img
             className="lg:w-full lg:h-screen w-full h-screen object-cover "
-            src="/images/Firefly.png"
+            src="/images/Firefly.webp"
             alt=""
           />
         </div>

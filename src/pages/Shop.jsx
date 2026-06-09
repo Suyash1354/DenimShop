@@ -145,7 +145,7 @@ const Shop = () => {
         >
           <img
             className="w-full h-full object-cover select-none pointer-events-none"
-            src="/images/storefront.png" 
+            src="/images/storefront.webp" 
             alt="Maison Noiré Flagship Exterior Boutique Storefront Asset"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/10 mix-blend-multiply pointer-events-none" />
