@@ -19,7 +19,7 @@ const Home = ({ isLoading }) => {
   useGSAP(() => {
     const Heading = new SplitText(HeadingRef.current, { type: "chars" });
     
-    // Create the timeline in a paused state right away
+    
     introTimeline.current = gsap.timeline({ paused: true });
 
     introTimeline.current.from(PngRef.current, {

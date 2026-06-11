@@ -156,8 +156,7 @@ const Categories = () => {
           stagger: 0.25,       
           ease: "power1.out"
         })
-        // 2. Slide horizontally right (Spreading out)
-        // Named this position track block "startSpreading"
+
         .to(Target, {
           x: (index) => {
             const containerWidth = window.innerWidth;
@@ -169,7 +168,7 @@ const Categories = () => {
           stagger: 0.75,     
           ease: "power2.inOut"
         }, "startSpreading")
-        // Secondary visual events synchronized using relative offsets to the label block
+      
         .to("#desktop-container", { backgroundColor: "#D9D2CE", duration: 0 }, "startSpreading")
         .to(Heading.current, { y: 0, duration: 1 }, "startSpreading+=1")
         .from(
@@ -177,7 +176,7 @@ const Categories = () => {
           { opacity: 0, duration: 1, ease: "power3.inOut" },
           "startSpreading+=1"
         )
-        // FIX: Forces a clean synchronization checkpoint exactly where the horizontal slide ends
+
         .addLabel("slideRightEnd");
 
         // 3. Extra images loop
@@ -195,13 +194,13 @@ const Categories = () => {
                 animateTextChange(index);
               },
             },
-            // FIX: Forces the first image to wait until "slideRightEnd" label is completely reached
+         
             index === 0 ? "slideRightEnd" : `>1`
           );
         });
       });
 
-      // --- MOBILE / TABLET ANIMATIONS (< 1024px) ---
+
       mm.add("(max-width: 1023px)", () => {
         const mobileElements = gsap.utils.toArray(".mobile-reveal");
         
